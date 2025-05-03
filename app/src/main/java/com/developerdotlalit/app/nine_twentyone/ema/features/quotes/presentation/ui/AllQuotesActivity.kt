@@ -1,19 +1,20 @@
-package com.developerdotlalit.app.nine_twentyone.ema
+package com.developerdotlalit.app.nine_twentyone.ema.features.quotes.presentation.ui
 
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import com.developerdotlalit.app.nine_twentyone.ema.databinding.ActivityMainBinding
+import com.developerdotlalit.app.nine_twentyone.ema.R
+import com.developerdotlalit.app.nine_twentyone.ema.databinding.ActivityAllQuotesBinding
 
-class MainActivity : AppCompatActivity() {
+class AllQuotesActivity : AppCompatActivity() {
+    lateinit var binding: ActivityAllQuotesBinding
 
-    lateinit var binding: ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        binding = ActivityMainBinding.inflate(layoutInflater)
+        binding = ActivityAllQuotesBinding.inflate(layoutInflater)
         setContentView(binding.root)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
