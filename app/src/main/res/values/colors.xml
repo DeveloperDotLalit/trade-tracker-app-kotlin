@@ -1,5 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+    <!-- Primary Brand Colors -->
+    <color name="colorPrimary">#1976D2</color>
+    <color name="colorPrimaryVariant">#1565C0</color>
+    <color name="colorOnPrimary">#FFFFFF</color>
+
+    <!-- Backgrounds & Surfaces -->
+    <color name="colorBackground">#FAFAFA</color>
+    <color name="colorSurface">#FFFFFF</color>
+    <color name="colorOnSurface">#212121</color>
+
+    <!-- Text Colors -->
+    <color name="textPrimary">#212121</color>
+    <color name="textSecondary">#616161</color>
+    <color name="textDisabled">#9E9E9E</color>
+
+    <!-- State Colors -->
+    <color name="colorSuccess">#388E3C</color>
+    <color name="colorError">#D32F2F</color>
+    <color name="colorWarning">#FBC02D</color>
+    <color name="colorInfo">#0288D1</color>
+
+    <!-- Others -->
+    <color name="colorDivider">#E0E0E0</color>
+    <color name="colorRipple">#1A1976D2</color> <!-- 10% alpha ripple -->
+    <color name="colorCardSelected">#E3F2FD</color>
 </resources>
