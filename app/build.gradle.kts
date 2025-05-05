@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
+    id("com.google.devtools.ksp")
 }
 
 android {
@@ -49,4 +50,33 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+
+    // Kotlin and Core
+    implementation(libs.kotlin.stdlib)
+
+    // AppCompat and Material
+
+    // ConstraintLayout / RecyclerView
+    implementation(libs.androidx.recyclerview)
+
+    // Lifecycle components
+    implementation(libs.androidx.lifecycle.viewmodel.ktx)
+    implementation(libs.androidx.lifecycle.livedata.ktx)
+    implementation(libs.androidx.lifecycle.runtime.ktx)
+
+    // Coroutines
+    implementation(libs.kotlinx.coroutines.core)
+    implementation(libs.kotlinx.coroutines.android)
+
+    // Room components
+    implementation(libs.androidx.room.runtime)
+    ksp(libs.androidx.room.compiler)
+    implementation(libs.androidx.room.ktx)
+
+    // Navigation (if you want to navigate using intents only, this is optional)
+    implementation(libs.androidx.navigation.runtime.ktx)
+
+    // For ViewModelProvider.Factory
+    implementation(libs.androidx.lifecycle.viewmodel.savedstate)
+
 }
